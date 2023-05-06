@@ -1,7 +1,6 @@
-import rightArrow from '../../../icons/right-arrow.svg'
-import leftArrow from '../../../icons/left-arrow.svg'
-import ProgressControlCss from '../ProgressControl/ProgressControl.module.css'
-// import ProgressControlCss from 'components/step/ProgressControl/ProgressControl.module.css'
+import rightArrow from 'icons/right-arrow.svg'
+import leftArrow from 'icons/left-arrow.svg'
+import ProgressControlCss from 'components/step/ProgressControl/ProgressControl.module.css'
 
 export function ProgressControl () {
   return (
@@ -32,6 +31,5 @@ export function ProgressControl () {
           </button>
         </section>
       </section>      
-    
   )
 } 

@@ -1,6 +1,7 @@
 # Alpha_shop_i專案
 
 Alpha shop的範例畫面
+
 ![cover img](https://github.com/LouisZhong/alpha_shop/blob/main/public/images/cover.PNG)
 
 
@@ -12,13 +13,13 @@ React 18.2.0
 
 ### 安裝方式
 
-1.確認安裝完成Node.js與npm
+1.確認安裝完成Node.js與npm (npm init -y)
 
 2.將專案 clone 到本地 
 
 `git clone  https://github.com/LouisZhong/alpha_shop.git`
  
-3.透過終端機進入資料夾，輸入：
+3.透過終端機進入資料夾(alpha_shop_i)，輸入：
 
 `npm install`
 
@@ -26,4 +27,4 @@ React 18.2.0
 
 `npm start`
 
-5.打開瀏覽器進入到此網址： http://localhost:3000
+5.瀏覽器自動進入到此網址： http://localhost:3000

@@ -1,5 +1,5 @@
-import pgComplete from '../../../icons/pg-complete.svg';
-import StepProgressCss from '../StepProgress/StepProgress.module.css'
+import pgComplete from 'icons/pg-complete.svg';
+import StepProgressCss from 'components/step/StepProgress/StepProgress.module.css'
 
 export function StepProgress () {
   return (
