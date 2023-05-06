@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Alpha_shop_i 專案
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
