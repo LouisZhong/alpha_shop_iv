@@ -1,9 +1,10 @@
+import StepCss from '../Step/Step.module.css'
 
 export function Step2 () {
   return (
     <>
       {/* <!-- shipping phase --> */}
-      <form class="col col-12" data-phase="shipping">
+      <form className={`${StepCss.step2form}`} data-phase="shipping">
         <h3 class="form-title">運送方式</h3>
         <section class="form-body col col-12">
           <label class="radio-group col col-12" data-price="0">

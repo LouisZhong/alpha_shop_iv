@@ -1,0 +1,55 @@
+h2 {
+  font-size: 36px;
+}
+
+.progressContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.progressGroup {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+.progressIcon {
+  display: flex
+}
+
+.circleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-right: 6px; 
+}
+
+.groupActive {
+  font-weight: 600;
+  color: black;
+}
+
+.circleActive {
+  border-color: gray;
+  background-color: black;
+  color: #ffffff;
+}
+
+.pgComplete {
+  display: none
+}
+
+.progressBar {
+  flex: 1;
+  height: 2px;
+  min-width: 30px;
+  background-color: gray;
+  margin: 0 5%;
+}

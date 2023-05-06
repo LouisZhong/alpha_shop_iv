@@ -1,9 +1,10 @@
+import StepCss from '../Step/Step.module.css'
 
 export function Step3 () {
   return (
     <>
       {/* <!-- credit-card phase --> */}
-      <form class="col col-12" data-phase="credit-card">
+      <form className={`${StepCss.step3form}`} data-phase="credit-card">
         <h3 class="form-title">付款資訊</h3>
         <section class="form-body col col-12">
           <div class="col col-12">
