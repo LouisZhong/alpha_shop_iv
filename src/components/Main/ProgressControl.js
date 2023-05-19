@@ -1,6 +1,6 @@
-import rightArrow from 'icons/right-arrow.svg'
-import leftArrow from 'icons/left-arrow.svg'
-import ProgressControlCss from 'components/step/ProgressControl/ProgressControl.module.css'
+import rightArrow from 'assets/icons/right-arrow.svg'
+import leftArrow from 'assets/icons/left-arrow.svg'
+import ProgressControlCss from 'components/Main/ProgressControl.module.css'
 
 export function ProgressControl () {
   return (

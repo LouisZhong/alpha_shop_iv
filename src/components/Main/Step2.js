@@ -1,4 +1,4 @@
-import StepCss from 'components/step/Step/Step.module.css'
+import StepCss from 'components/Main/Step.module.css'
 
 export function Step2 () {
   return (
