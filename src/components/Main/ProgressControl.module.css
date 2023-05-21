@@ -1,13 +1,23 @@
 .progressControlContainer {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-end;
+  /* display: flex; */
+  /* flex-direction: column;  */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
   margin-top: 60px;
-  border-top: 1px solid gray
+  width:50%;
+  /* border: 1px solid gray */
 }
 
 .buttonGroupAddress {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  display: flex;
+  justify-content: flex-end
+  ;
+}
+
+.buttonGroupShipping, .buttonGroupPay {
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
@@ -21,12 +31,19 @@ button {
   background-color: #F67599;
   border: 0;
   border-radius: 8px;
+  cursor: pointer;
 }
+
 
 .cursorLeft {
   padding-left: 10px;
 }
 
+.cursorRight {
+  padding-right: 10px;
+ }
+
 .buttonGroupShipping, .buttonGroupPay {
-  display:none
+  /* display:none */
+  display: flex;
 }
