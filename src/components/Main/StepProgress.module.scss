@@ -1,3 +1,7 @@
+
+$non-active: #bdbdbd;
+$active: black;
+
 h2 {
   font-size: 36px;
 }
@@ -12,7 +16,7 @@ h2 {
 .progressGroup {
   display: flex;
   justify-content: center;
-  color: gray;
+  color: $non-active;
 }
 
 .progressIcon {
@@ -37,7 +41,7 @@ h2 {
 }
 
 .circleActive {
-  border-color: gray;
+  border-color: black;
   background-color: black;
   color: #ffffff;
 }
@@ -50,6 +54,10 @@ h2 {
   flex: 1;
   height: 2px;
   min-width: 30px;
-  background-color: gray;
+  background-color: $non-active;
   margin: 0 5%;
+}
+
+.progressBarActive {
+  background-color: $active;
 }

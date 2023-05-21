@@ -1,5 +1,5 @@
 import pgComplete from 'assets/icons/pg-complete.svg';
-import StepProgressCss from 'components/Main/StepProgress.module.css'
+import StepProgressCss from 'components/Main/StepProgress.module.scss'
 
 function Progress({number, phase, step}) {
   return (
@@ -16,7 +16,7 @@ function Progress({number, phase, step}) {
       {number !== 3 && (
         <span className={`${StepProgressCss.progressBar}`} data-order={number}></span>
       )}
-      
+
     </>
   )
 }
