@@ -25,8 +25,8 @@ function Progress({number, phase, step}) {
 export function StepProgress () {
   return (
     <>
-      <h2 class="register-title col col-12">結帳</h2>
-      <section class={`${StepProgressCss.progressContainer}`}>
+      <h2 className="register-title col col-12">結帳</h2>
+      <section className={`${StepProgressCss.progressContainer}`}>
         <Progress 
           number={1}
           step="寄送地址"

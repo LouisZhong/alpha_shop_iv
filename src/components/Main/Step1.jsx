@@ -5,8 +5,8 @@ export function Step1 () {
     <>
       {/* <!-- address phase --> */}
       <form className={`${Step1Css.formWrapper}`} data-phase="address">
-        <h3 class="form-title">寄送地址</h3>
-        <section class="form-body col col-12">
+        <h3 className="form-title">寄送地址</h3>
+        <section className="form-body col col-12">
           <div className={Step1Css.formColumn}>
             <div className={`${Step1Css.inputGroupS}`}>
               <div className={Step1Css.inputLabel}>稱謂</div>

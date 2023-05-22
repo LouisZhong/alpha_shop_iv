@@ -5,8 +5,8 @@ export function StepProgressNew ({ step }) {
   if (step <= 0) {
     return (
     <>
-      <h2 class="register-title col col-12">結帳</h2>
-      <section class={`${StepProgressCss.progressContainer}`}>
+      <h2 className="register-title col col-12">結帳</h2>
+      <section className={`${StepProgressCss.progressContainer}`}>
         <span className={`${StepProgressCss.progressGroup} ${StepProgressCss.groupActive}`} data-phase="address">
           <span className={StepProgressCss.progressIcon}>
             <div className={`${StepProgressCss.circleContainer} ${StepProgressCss.circleActive}`}>
@@ -44,8 +44,8 @@ export function StepProgressNew ({ step }) {
   } else if (step === 1) {
     return (
     <>
-      <h2 class="register-title col col-12">結帳</h2>
-      <section class={`${StepProgressCss.progressContainer}`}>
+      <h2 className="register-title col col-12">結帳</h2>
+      <section className={`${StepProgressCss.progressContainer}`}>
         <span className={`${StepProgressCss.progressGroup} ${StepProgressCss.groupActive}`} data-phase="address">
           <span className={StepProgressCss.progressIcon}>
             <div className={`${StepProgressCss.circleContainer} ${StepProgressCss.circleActive}`}>
@@ -83,8 +83,8 @@ export function StepProgressNew ({ step }) {
   } else if (step >1 ) {
     return (
     <>
-      <h2 class="register-title col col-12">結帳</h2>
-      <section class={`${StepProgressCss.progressContainer}`}>
+      <h2 className="register-title col col-12">結帳</h2>
+      <section className={`${StepProgressCss.progressContainer}`}>
         <span className={`${StepProgressCss.progressGroup} ${StepProgressCss.groupActive}`} data-phase="address">
           <span className={StepProgressCss.progressIcon}>
             <div className={`${StepProgressCss.circleContainer} ${StepProgressCss.circleActive}`}>

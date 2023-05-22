@@ -63,10 +63,10 @@ export default function Cart () {
     setProduct(updateProducts)
   }
 
-  function handleMinusClick () {
-    // setCount(count - 1)
-  }
-  
+  const totalPrice = products.reduce((total, product) => {
+    return total + product.price * product.quantity
+  }, 0)
+
   return (
     <section className={cartScss.cartContainer}>      
       <h3 className={cartScss.productTitle}>購物籃</h3>
@@ -78,11 +78,11 @@ export default function Cart () {
       </section>
       <section className={`${cartScss.cartInfo} ${cartScss.shipping}`}>
         <div class="text">運費</div>
-        <div className={cartScss.price}>free</div>
+        <div className={cartScss.price}>免費</div>
       </section>
       <section className={`${cartScss.cartInfo} ${cartScss.total}`}>
         <div class="text">小計</div>
-        <div className={cartScss.price}>5200</div>
+        <div className={cartScss.price}>{totalPrice}</div>
       </section>
     </section>
   )

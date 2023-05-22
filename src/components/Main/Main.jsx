@@ -17,8 +17,8 @@ export function Main () {
   }
 
   return (
-    <main class="site-main">
-      <div class={mainCss.mainContainer}>
+    <main className="site-main">
+      <div className={mainCss.mainContainer}>
         <Register 
           step={step}
         />

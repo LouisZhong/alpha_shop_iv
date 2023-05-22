@@ -10,7 +10,6 @@ const [steps, setSteps] = useState(
 
   return (
     <>
-      <p>Now is step : {steps}</p>
       <Main />
     </>
   );
