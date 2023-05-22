@@ -2,7 +2,7 @@
 
 Alpha shop的範例畫面
 
-![cover img](https://github.com/LouisZhong/alpha_shop/blob/main/public/images/cover.PNG)
+![cover img](https://github.com/LouisZhong/alpha_shop_iii/blob/main/public/images/cover.PNG)
 
 
 ### 環境要求
@@ -17,7 +17,7 @@ React 18.2.0
 
 2.將專案 clone 到本地 
 
-`git clone  https://github.com/LouisZhong/alpha_shop.git`
+`git clone  https://github.com/LouisZhong/alpha_shop_iii.git`
  
 3.透過終端機進入資料夾(alpha_shop)，輸入：
 
