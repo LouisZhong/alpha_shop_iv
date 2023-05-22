@@ -19,7 +19,7 @@ React 18.2.0
 
 `git clone  https://github.com/LouisZhong/alpha_shop_iii.git`
  
-3.透過終端機進入資料夾(alpha_shop)，輸入：
+3.透過終端機進入資料夾(alpha_shop_iii)，輸入：
 
 `npm install`
 
