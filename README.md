@@ -17,9 +17,9 @@ React 18.2.0
 
 2.將專案 clone 到本地 
 
-`git clone  https://github.com/LouisZhong/alpha_shop_iii.git`
+`git clone  https://github.com/LouisZhong/alpha_shop_iv.git`
  
-3.透過終端機進入資料夾(alpha_shop_iii)，輸入：
+3.透過終端機進入資料夾(alpha_shop_iv)，輸入：
 
 `npm install`
 
