@@ -21,7 +21,7 @@ export function Step3 ({handleCardInputValue}) {
             </div>
           </div>
           <div className={styles.verifyInfo}>
-            <div class={styles.inputGroup}>
+            <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>有效期限</div>
               <input type="text" placeholder="MM/YY" data-name="expireDate" onChange={handleCardInputValue}/>
             </div>
