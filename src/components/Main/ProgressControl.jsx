@@ -1,9 +1,20 @@
 import rightArrow from 'assets/icons/right-arrow.svg'
 import leftArrow from 'assets/icons/left-arrow.svg'
 import ProgressControlCss from 'components/Main/ProgressControl.module.css'
+import { useContext } from 'react'
+import { CreditCardContext } from 'context/CreditCardContext'
 
-export default function ProgressControlNew( {step, onPrevStep, onNextStep} ) {
+export default function ProgressControl( {step, onPrevStep, onNextStep, totalPrice} ) {
+  const cardInfo = useContext(CreditCardContext)
   
+  function handleSubmit() {
+    console.log(`持卡人姓名: ${cardInfo.cardHolder}`)
+    console.log(`卡號: ${cardInfo.cardNum}`)
+    console.log(`有效期限: ${cardInfo.expireDate}`)
+    console.log(`CVC: ${cardInfo.cvc}`)
+    console.log(`Price: ${totalPrice}`)
+  }
+
   function StepButton ({ step }) {
     if (step <= 0) {
       return (
@@ -34,7 +45,7 @@ export default function ProgressControlNew( {step, onPrevStep, onNextStep} ) {
             <img src={leftArrow} className='' alt='svg-icon-right-arrow' />
             上一步
           </button>
-          <button className="next">
+          <button className="next" onClick={handleSubmit}>
             確認下單
           </button>
         </section>

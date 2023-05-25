@@ -1,20 +1,20 @@
 import { StepProgress } from 'components/Main/StepProgress';
-import { StepProgressNew } from 'components/Main/StepProgressNew';
 import { Form } from 'components/Main/Form';
 
 import mainCss from 'components/Main/Main.module.scss'
 
-export default function Register ({ step }) {
+export default function Register ({ step, handleCardInputValue }) {
   return (
     <>
       <section className={mainCss.registerContainer}>
         {/* <StepProgress /> */}
-        <StepProgressNew 
+        <StepProgress
           step={step}
         />
-        <section class="form-container col col-12">          
+        <section className="form-container col col-12">          
           <Form 
             step={step}
+            handleCardInputValue={handleCardInputValue}
           />
         </section>        
       </section>

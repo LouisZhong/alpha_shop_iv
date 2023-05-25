@@ -2,6 +2,10 @@
   width:200px;
 }
 
+.formTitle {
+  font-size: 24px;
+}
+
 .formColumn {
   display: flex;
   justify-content: space-between;
@@ -22,7 +26,7 @@
 
 .inputLabel {  
   height: 1rem;
-  font-size: 0.8rem;
+  font-size: 12px;
   color: gray;
   font-weight: 700;
   margin-bottom: 6px;

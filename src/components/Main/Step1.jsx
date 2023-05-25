@@ -5,14 +5,14 @@ export function Step1 () {
     <>
       {/* <!-- address phase --> */}
       <form className={`${Step1Css.formWrapper}`} data-phase="address">
-        <h3 className="form-title">寄送地址</h3>
+        <h3 className={Step1Css.formTitle}>寄送地址</h3>
         <section className="form-body col col-12">
           <div className={Step1Css.formColumn}>
             <div className={`${Step1Css.inputGroupS}`}>
               <div className={Step1Css.inputLabel}>稱謂</div>
               <div className={`${Step1Css.selectContainer}`}>
-                <select className={Step1Css.select}>
-                  <option className={Step1Css.option} value="mr" selected>先生</option>
+                <select className={Step1Css.select} defaultValue={"mr"}>
+                  <option className={Step1Css.option} value="mr">先生</option>
                   <option className={Step1Css.option} value="ms">女士</option>
                   <option className={Step1Css.option} value="mx">不明</option>
                 </select>

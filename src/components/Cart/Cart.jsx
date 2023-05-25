@@ -2,24 +2,8 @@
 import minus from 'assets/icons/minus.svg'
 import plus from 'assets/icons/plus.svg'
 import cartScss from 'components/Cart/Cart.module.scss'
-import { useState } from 'react'
-
-const items = [
-  {
-    id: '1',
-    name: '貓咪罐罐',
-    img: 'https://picsum.photos/300/300?text=1',
-    price: 100,
-    quantity: 2,
-  },
-  {
-    id: '2',
-    name: '貓咪干干',
-    img: 'https://picsum.photos/300/300?text=2',
-    price: 200,
-    quantity: 1,
-  }
-]
+import { useContext } from 'react'
+import { CartContext } from 'context/CartContext'
 
 function ItemRender ({ products, handleQuantityClick }) {
     const listItems = products.map(product => 
@@ -38,34 +22,15 @@ function ItemRender ({ products, handleQuantityClick }) {
       </div>
     </div>
   ); 
-
   return (
     <>{listItems}</>
   )  
 }
 
-export default function Cart () {
-  const [products, setProduct] = useState(items)
+export default function Cart ({ handleQuantityClick, totalPrice }) {
 
-  function handleQuantityClick (productId, action) {
-    const nextProducts = products.map(product => {
-      if (product.id === productId) {
-        return {
-          ...product,
-          quantity: action === 'minus' ? product.quantity -1 : product.quantity + 1
-        }
-      } else {
-        return product
-      }
-    })
-    //過濾數量=0的商品
-    const updateProducts = nextProducts.filter(product => product.quantity > 0)
-    setProduct(updateProducts)
-  }
-
-  const totalPrice = products.reduce((total, product) => {
-    return total + product.price * product.quantity
-  }, 0)
+  //從CartContext拿資料
+  const products = useContext(CartContext)
 
   return (
     <section className={cartScss.cartContainer}>      
@@ -77,13 +42,14 @@ export default function Cart () {
         />
       </section>
       <section className={`${cartScss.cartInfo} ${cartScss.shipping}`}>
-        <div class="text">運費</div>
+        <div className="text">運費</div>
         <div className={cartScss.price}>免費</div>
       </section>
       <section className={`${cartScss.cartInfo} ${cartScss.total}`}>
-        <div class="text">小計</div>
+        <div className="text">小計</div>
         <div className={cartScss.price}>{totalPrice}</div>
       </section>
     </section>
   )
 }
+
