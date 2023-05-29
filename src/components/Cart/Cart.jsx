@@ -27,10 +27,10 @@ function ItemRender ({ products, handleQuantityClick }) {
   )  
 }
 
-export default function Cart ({ handleQuantityClick, totalPrice }) {
+export default function Cart () {
 
   //從CartContext拿資料
-  const products = useContext(CartContext)
+  const { products, handleQuantityClick, totalPrice } = useContext(CartContext)
 
   return (
     <section className={cartScss.cartContainer}>      

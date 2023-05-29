@@ -3,9 +3,11 @@ import leftArrow from 'assets/icons/left-arrow.svg'
 import ProgressControlCss from 'components/Main/ProgressControl.module.css'
 import { useContext } from 'react'
 import { CreditCardContext } from 'context/CreditCardContext'
+import { CartContext } from 'context/CartContext'
 
-export default function ProgressControl( {step, onPrevStep, onNextStep, totalPrice} ) {
+export default function ProgressControl( {step, onPrevStep, onNextStep} ) {
   const cardInfo = useContext(CreditCardContext)
+  const { totalPrice } = useContext(CartContext)
   
   function handleSubmit() {
     console.log(`持卡人姓名: ${cardInfo.cardHolder}`)

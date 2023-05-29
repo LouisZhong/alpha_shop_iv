@@ -9,7 +9,7 @@ export function Step2 () {
         <h3 className={styles.formTitle}>運送方式</h3>
         <section className={styles.formBody}>
           <label className={styles.radioGroup} data-price="0">
-            <input id="shipping-standard" type="radio" name="shipping"  checked/>
+            <input id="shipping-standard" type="radio" name="shipping"  defaultChecked={true}/>
             <div className={styles.radioInfo}>
               <div className="col col-12">
                 <div className={styles.text}>標準運送</div>
